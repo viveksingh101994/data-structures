@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc && npm run test:tslint && npm run test:prettier",
     "build": "tsc",
     "prestart": "tsc -w",
     "start": "node dist/src/index.js",
