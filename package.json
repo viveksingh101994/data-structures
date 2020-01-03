@@ -1,0 +1,24 @@
+{
+  "name": "datastructures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prestart": "tsc -w",
+    "start": "node dist/src/index.js",
+    "test:tslint": "tslint -t verbose --project tsconfig.json",
+    "test:prettier": "prettier --list-different \"**/*.{ts,js,css,scss,md}\"",
+    "fix:tslint": "tslint --fix --project tsconfig.json",
+    "fix:prettier": "prettier --write \"**/*.{ts,js,css,scss,md}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.4"
+  }
+}
