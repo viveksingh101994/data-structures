@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run test:tslint && npm run test:prettier",
     "build": "tsc",
-    "prestart": "tsc -w",
+    "prestart": "tsc",
     "start": "node dist/src/index.js",
     "test:tslint": "tslint -t verbose --project tsconfig.json",
     "test:prettier": "prettier --list-different \"**/*.{ts,js,css,scss,md}\"",
@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^13.1.2",
     "prettier": "^1.19.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
