@@ -68,7 +68,8 @@ A graph is a set of nodes that are connected to each other in the form of a netw
 #### Implemenation
 
 - It will be based on adjacency list model.
-  > ![graph-adjacency-list-model](/assets/graph-adjacency-list-model.jpg)
+
+> ![graph-adjacency-list-model](/assets/graph-adjacency-list-model.jpg)
 
 #### Time Complexities
 
