@@ -1,4 +1,4 @@
-# **DATA STRUCTURE**  :fearful: 
+# **DATA STRUCTURE** :fearful:
 
 This project will cover the topics of linked list, graph, binary trees, trie and hashing.
 
