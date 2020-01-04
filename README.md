@@ -17,7 +17,7 @@ Linked list v/s Array
 > | ---------------- | ---------- | ----- |
 > | access           | O(n)       | O(1)  |
 > | insert (at head) | O(1)       | O(n)  |
-> | delete (at head) | O(1)       | O (n) |
+> | delete (at head) | O(1)       | O(n)  |
 
 The primary operations that generally form a part of the LinkedList class are listed below:
 
