@@ -1,4 +1,5 @@
-import { LinkedList } from './linked-list/linked-list';
+import { Graph } from './graph';
+import { LinkedList } from './linked-list';
 
 function LinkedListExecution(): void {
   const list = new LinkedList();
@@ -14,4 +15,37 @@ function LinkedListExecution(): void {
   list.printList();
 }
 
+function GraphExecution(): void {
+  const g = new Graph(4);
+  g.addEdge(0, 1);
+  g.addEdge(0, 2);
+  g.addEdge(1, 3);
+  g.addEdge(2, 3);
+  g.printGraph();
+}
+
+function bfsTraversal(): string {
+  const g1 = new Graph(5);
+  g1.addEdge(0, 1);
+  g1.addEdge(0, 2);
+  g1.addEdge(1, 3);
+  g1.addEdge(1, 4);
+  return g1.bfsTraversal(0);
+}
+
+function dfsTraversal(): string {
+  const g = new Graph(5);
+  g.addEdge(0, 1);
+  g.addEdge(0, 2);
+  g.addEdge(1, 3);
+  g.addEdge(1, 4);
+  console.log(g.detectCycle(0));
+  g.addEdge(4, 0);
+  console.log(g.detectCycle(0));
+  return g.dfsTraversal(0);
+}
+
 LinkedListExecution();
+GraphExecution();
+console.log(bfsTraversal());
+console.log(dfsTraversal());

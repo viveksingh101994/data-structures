@@ -1,4 +1,4 @@
-# **DATA STRUCTURE**  :fearful: 
+# **DATA STRUCTURE** :fearful:
 
 This project will cover the topics of linked list, graph, binary trees, trie and hashing.
 
@@ -13,11 +13,11 @@ This project will cover the topics of linked list, graph, binary trees, trie and
 
 Linked list v/s Array
 
-| Operation        | LinkedList | Array |
-| ---------------- | ---------- | ----- |
-| access           | O(n)       | O(1)  |
-| insert (at head) | O(1)       | O(n)  |
-| delete (at head) | O(1)       | O (n) |
+> | Operation        | LinkedList | Array |
+> | ---------------- | ---------- | ----- |
+> | access           | O(n)       | O(1)  |
+> | insert (at head) | O(1)       | O(n)  |
+> | delete (at head) | O(1)       | O(n)  |
 
 The primary operations that generally form a part of the LinkedList class are listed below:
 
@@ -64,3 +64,17 @@ A graph is a set of nodes that are connected to each other in the form of a netw
 - **Self Loop**: This occurs when an edge starts and ends on the same vertex.
 
 - **Adjacency**: Two vertices are said to be adjacent if there is an edge connecting them directly.
+
+#### Implemenation
+
+- It will be based on adjacency list model.
+  > ![graph-adjacency-list-model](/assets/graph-adjacency-list-model.jpg)
+
+#### Time Complexities
+
+> | Operation     | Adjacency List | Adjacency Matrix |
+> | ------------- | -------------- | ---------------- |
+> | Add Vertex    | O(1)           | O(V^2)           |
+> | Remove Vertex | O(V+E)         | O(V^2)           |
+> | Add Edge      | O(1)           | O(1)             |
+> | Remove Edge   | O(E)           | O(1)             |

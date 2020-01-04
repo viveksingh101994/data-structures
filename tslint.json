@@ -5,7 +5,8 @@
   "rules": {
     "object-literal-sort-keys": false,
     "ordered-imports": true,
-    "no-console": false
+    "no-console": false,
+    "prefer-for-of": false
   },
   "rulesDirectory": []
 }
