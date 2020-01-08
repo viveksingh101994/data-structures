@@ -1,6 +1,6 @@
+import { BinarySearchTree } from './binary-tree/binary-search-tree';
 import { Graph } from './graph';
 import { LinkedList } from './linked-list';
-import { BinarySearchTree } from './binary-tree/binary-search-tree';
 
 function LinkedListExecution(): void {
   const list = new LinkedList();
