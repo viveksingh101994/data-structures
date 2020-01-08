@@ -1,6 +1,7 @@
-import { BinarySearchTree } from './binary-tree/binary-search-tree';
+import { BinarySearchTree } from './binary-tree';
 import { Graph } from './graph';
 import { LinkedList } from './linked-list';
+import { Trie } from './trie';
 
 function LinkedListExecution(): void {
   const list = new LinkedList();
@@ -61,8 +62,32 @@ function bst(): void {
   BST.inOrderPrint(BST.root);
 }
 
+function playWithTrie(): void {
+  // Input keys (use only 'a' through 'z' and lower case)
+  const keys = [
+    'the',
+    'a',
+    'there',
+    'answer',
+    'any',
+    'by',
+    'bye',
+    'world',
+    'their',
+    'abc',
+    'hello'
+  ];
+  const t = new Trie();
+  for (let i = 0; i < keys.length; i++) {
+    t.insert(keys[i]);
+  }
+  console.log(t.totalWords(t.root));
+  console.log(t.isFormationPossible('helloworld'));
+}
+
 LinkedListExecution();
 GraphExecution();
 console.log(bfsTraversal());
 console.log(dfsTraversal());
 bst();
+playWithTrie();
