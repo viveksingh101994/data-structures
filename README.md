@@ -144,4 +144,4 @@ Tree-like data structure that proves to be very efficient while solving programm
 
 - Another important property of a trie is that it provides the same path for words that share a common prefix. For example, “there” and “their” have a common prefix “the”. Hence, they will share the same path until “e”. After that, the path will split into two branches. This is the backbone of the trie functionality.
 
-> ![trie-model](/assets/trie.jpg)
+> ![trie-model](/assets/Trie.jpg)
