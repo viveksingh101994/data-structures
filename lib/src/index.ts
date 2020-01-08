@@ -1,5 +1,6 @@
 import { Graph } from './graph';
 import { LinkedList } from './linked-list';
+import { BinarySearchTree } from './binary-tree/binary-search-tree';
 
 function LinkedListExecution(): void {
   const list = new LinkedList();
@@ -45,7 +46,23 @@ function dfsTraversal(): string {
   return g.dfsTraversal(0);
 }
 
+function bst(): void {
+  const BST = new BinarySearchTree(6);
+  console.log('The root val for BST : ', BST.root.value);
+  BST.insertBST(4);
+  BST.insertBST(9);
+  BST.insertBST(5);
+  BST.insertBST(2);
+  BST.insertBST(8);
+  BST.insertBST(12);
+  BST.insertBST(10);
+  BST.insertBST(14);
+
+  BST.inOrderPrint(BST.root);
+}
+
 LinkedListExecution();
 GraphExecution();
 console.log(bfsTraversal());
 console.log(dfsTraversal());
+bst();
